@@ -20,7 +20,7 @@ This is **ProjectHub**, a production-ready MERN stack application designed to he
 ![Projects](./screenshots/project.png)
 
 ### Demo Video
-[Watch the demo video](./screenshots/demo.mp4)
+[Watch the demo video (Direct Link)](https://github.com/EhsanAfzal005/fullstack-project-dashboard/raw/main/screenshots/demo.mp4)
 
 ---
 
