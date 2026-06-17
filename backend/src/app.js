@@ -54,6 +54,8 @@ app.get('/api/health', (req, res) => {
     message: 'API is running.',
     environment: process.env.NODE_ENV || 'development',
     timestamp: new Date().toISOString(),
+    database_status: global.lastMongoError === null ? "Connected" : "Disconnected",
+    database_error: global.lastMongoError
   });
 });
 
