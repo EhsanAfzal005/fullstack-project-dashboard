@@ -1,5 +1,9 @@
 const dotenv = require('dotenv');
 
+console.log("====================================");
+console.log("SERVER.JS IS STARTING EXECUTING...");
+console.log("====================================");
+
 dotenv.config();
 
 const app = require('./src/app');
@@ -11,7 +15,7 @@ const startServer = async () => {
   try {
     await connectDB();
 
-    const server = app.listen(PORT, () => {
+    const server = app.listen(PORT, '0.0.0.0', () => {
       console.log(
         `\nServer running in ${process.env.NODE_ENV || 'development'} mode on port ${PORT}`
       );
