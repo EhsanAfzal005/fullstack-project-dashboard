@@ -40,6 +40,14 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec, {
 }));
 
 
+// Root health check for deployment platforms
+app.get('/', (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: 'FS-APP-DASH Backend is running.',
+  });
+});
+
 app.get('/api/health', (req, res) => {
   res.status(200).json({
     success: true,

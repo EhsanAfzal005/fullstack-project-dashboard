@@ -24,7 +24,7 @@ const connectDB = async () => {
     });
   } catch (error) {
     console.error(`MongoDB connection failed: ${error.message}`);
-    process.exit(1);
+    console.error('The server will continue running but database features will not work.');
   }
 };
 
